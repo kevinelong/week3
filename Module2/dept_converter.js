@@ -1,6 +1,6 @@
 //switch 
 
-let departmentCode = 3
+let departmentCode = 20
 let departmentName = "default";
 
 switch(departmentCode){
