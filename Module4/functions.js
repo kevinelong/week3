@@ -28,7 +28,7 @@ console.log(addTwo(6, "7"));
 console.log(addTwo("6", 7));
 copyright();
 
-
+// Order of operations affects outcome using + and strings
 console.log( 6 + "ABC" + (7 + 10)); // outputs 6ABC17
 console.log( 6 + "ABC" + 7 + 10); // outputs 6ABC710
 console.log( 6 + 7 + "ABC"); // outputs 13ABC
