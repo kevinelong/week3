@@ -17,16 +17,23 @@
     >
     <button id="login" onclick="alert(`I was clicked!`)">Login</button>
 </body>
-
 <script src="scripts/all.js"></script>
-
 <script>
-    // function onLoginClick(){
-    //     alert("Login ws clicked.")
-    // }
-    // const login = document.getElementById("login");
-    // login.addEventListener("click", onLoginClick);
+    document.addEventListener("DOMContentLoaded", ()=>{
     
-    document.getElementById("username").value = "KEVIN";
-    alert("READY")
+        function onLoginClick(){
+            alert("Login ws clicked.")
+        }
+        // const onLoginClick = ()=> {
+        //     alert("Login ws clicked.")
+        // }
+        const login = document.getElementById("login");
+        login.addEventListener("click", onLoginClick);
+        
+        document.getElementById("username").value = "KEVIN";
+        // alert("READY");
+        
+    }); //END DOMContentLoaded
+    
+
 </script>
