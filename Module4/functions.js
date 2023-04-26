@@ -18,10 +18,18 @@ console.log(testResult === "Hello Class!!! You are 21 years old.")
 printGreeting("Class", 21);
 printGreeting("Kevin", 55);
 printGreeting();
-function addTwo(a, b){
-    let result = a + b;
-    return result;
+
+
+//DEFINING A NEW FUNCTION with name and block of code
+function addTwo(a, b){ // Receiving two incoming Parameters
+    let inner_result = a + b; // The body of the function
+    return inner_result; // The return value. zero or one value
 }
+// Calling or Invoking a function
+let outer_result = addTwo(6, 7); //passing in two Arguments 6 and 7.
+console.log(outer_result);
+
+
 console.log(addTwo(6, 7));
 console.log(addTwo("6", "7")); //ONE OR MORE STRINGS CONCATENATE
 console.log(addTwo(6, "7"));
