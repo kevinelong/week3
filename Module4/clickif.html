@@ -1,0 +1,29 @@
+
+<body>
+    <input type="button" value="red" id="red">
+    <input type="button" value="green" id="green">
+    <input type="button" value="blue" id="blue">
+    <div id="color">COLOR</div>
+</body>
+<script>
+const red = document.getElementById("red");
+const green = document.getElementById("green");
+const blue = document.getElementById("blue");
+const color = document.getElementById("color");
+
+function colorClicked(e){
+    const caption = e.target.value;
+    if(caption === "red"){
+        color.innerHTML = "RED";
+    }else if(caption === "green"){
+        color.innerHTML = "GREEN";    
+    }else if(caption === "blue"){
+        color.innerHTML = "BLUE";
+    }
+    color.style.backgroundColor = caption;
+}
+red.addEventListener("click", colorClicked)
+green.addEventListener("click", colorClicked)
+blue.addEventListener("click", colorClicked)
+
+</script>
